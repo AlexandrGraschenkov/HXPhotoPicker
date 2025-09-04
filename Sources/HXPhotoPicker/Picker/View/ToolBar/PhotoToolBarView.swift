@@ -859,7 +859,7 @@ extension PhotoToolBarView {
             finishTitle = .textPreview.bottomView.finishTitle.text
         }
         if count > 0 {
-            finishBtn.isEnabled = true
+            finishBtn.isEnabled = count > pickerConfig.minimumSelectedCount
             if type == .picker {
                 previewBtn.isEnabled = true
             }
