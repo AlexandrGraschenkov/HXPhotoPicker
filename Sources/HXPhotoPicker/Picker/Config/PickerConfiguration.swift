@@ -131,6 +131,8 @@ public struct PickerConfiguration: IndicatorTypeConfig, PhotoDebugLogsConfig, Ph
     /// 最多可以选择的资源数，如果为0则不限制
     public var maximumSelectedCount: Int = 9
     
+    public var minimumSelectedCount: Int = 0
+    
     /// The maximum duration of video selection, if it is 0, there is no limit
     /// 视频最大选择时长，为0则不限制
     public var maximumSelectedVideoDuration: Int = 0
